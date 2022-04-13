@@ -314,6 +314,10 @@ body{
     margin-bottom: 20px;
 }
 
+.mapita:hover{
+    transform: skew(5deg, 5deg);
+}
+
 .informacion_extra_nosotros{
     grid-area: informacion_extra_nosotros;
     height: 150px;
@@ -399,6 +403,15 @@ body{
     contrast(100%);
     margin-left: 5px;
     display: none;
+}
+
+.fotos_galeria{
+    opacity: 0.4;
+    transition: opacity .8s;
+}
+
+.fotos_galeria:hover{
+    opacity: 1;
 }
 
 .habitacion1{
