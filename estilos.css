@@ -1,0 +1,1156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image:url(./multimedia/back_img.jpg);
+    background-size: cover;}
+/*INDEX.HTML*/
+    /*header*/
+.encabezado_index{
+    height: 200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-bottom: 50px;
+    grid-template-areas:
+    "logo menu_index";
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    grid-area: logo;
+}
+
+.logo_index{
+    width: 500px;
+    height: 150px;
+    animation-name: efecto_logo;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+@keyframes efecto_logo {
+    0%{ width: 500px; border: dotted white 10px;margin-left: 15px;}
+    25%{ width: 400px; border: dotted white 10px;margin-left: 10px;}
+    50%{ width: 350px;border: dotted white 10px;margin-left: 5px;}
+    75%{ width: 400px;border: dotted white 10px;margin-left: 10px;}
+    100%{ width: 500px;
+    border: dotted white 10px;
+    margin-left: 15px;}
+}     
+
+.menu_index{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 10px;
+    grid-area: menu_index;
+}
+
+.ayuda, .login{
+    width: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    filter: invert(99%) sepia(62%) saturate(813%) 
+    hue-rotate(176deg) brightness(116%) contrast(100%);
+}
+
+.boton1_index{
+    margin-right: 10px;
+}
+
+/*main*/
+.contenido_index{        
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5 1fr);
+    gap: 10px;
+    grid-template-areas:
+    "nav nav"
+    "fotos_index formulario_index"
+    "texto_index formulario_index"
+    "informacion_extra_index formulario_index"
+    "espacio_publicitario_index espacio_publicitario_index";
+}
+
+.barra_nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.lista_nav{
+    color: white;
+    display: inline-block;
+    font-family: fantasy;
+}
+
+.lista_nav :hover{
+    background-color: red;
+    color: white;
+}
+
+.secciones{
+    display: inline-block;
+    background-color: orange;
+    font-size: 20px;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.fotos_index{
+    grid-area: fotos_index;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.fotos{
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    width: 100%;
+}
+
+.foto1, .foto2{
+    width: 365px;
+}
+
+.formulario_index{
+    grid-area: formulario_index;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+}
+
+.texto_form{
+    color: white;
+    font-family: 'Righteous', cursive;
+    padding: 10px;
+}
+
+.comentario_form{
+    padding-left: 10px;
+}
+
+.boton_form{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.texto_general{
+    grid-area: texto_index;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    color: white;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.texto{
+    text-align: justify;
+    color: white;
+    font-family: 'Righteous', cursive;
+    padding: 20px;
+}
+
+.informacion_extra_index{
+    grid-area: informacion_extra_index;   
+    display: flex;
+    flex-direction: row;
+}
+
+.iconos_redes{
+    width: 20px;
+    filter: invert(99%) sepia(62%) saturate(813%) 
+    hue-rotate(176deg) brightness(116%) contrast(100%);
+}
+
+.espacio_publicitario_index{
+    grid-area: espacio_publicitario_index;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iconos_pie{
+    width: 40px;
+    height: 40px;
+    filter: invert(15%) sepia(18%) 
+    saturate(6865%) hue-rotate(302deg) 
+    brightness(106%) contrast(127%);
+}
+/*footer*/
+.footer_index{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.pie{
+    display: inline;
+    width: 15px;
+}
+
+.pie_de_pag{    
+    text-align: center;
+    color: white;
+    padding: 10px;
+    height: 20px;
+    margin: 5px;
+}
+/* NOSOTROS.HTML*/
+/*header*/    
+.encabezado_secciones{
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.titulo{
+    color: white;
+    text-decoration: underline;
+    font-family: 'Cinzel', serif;
+    font-size: 70px;
+    padding: 20px;
+}
+/*main*/
+    .contenido_nosotros{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px; 
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(6 1fr);
+    gap: 10px;
+    grid-template-areas:
+    "nav nav"
+    "foto_nosotros foto_nosotros"
+    "texto_nosotros texto_nosotros"
+    "mapa_nosotros mapa_nosotros"
+    "informacion_extra_nosotros informacion_extra_nosotros"
+    "espacio_publicitario_nosotros espacio_publicitario_nosotros";
+}
+
+.barra_nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.foto_nosotros{
+    grid-area: foto_nosotros;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.foto_hermanos{
+    width: 300px;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+.texto_nosotros{
+    grid-area: texto_nosotros;
+    grid: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.mapa{
+    grid-area: mapa_nosotros;
+    grid: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.mapita{
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.informacion_extra_nosotros{
+    grid-area: informacion_extra_nosotros;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.espacio_publicitario_nosotros{
+    grid-area: espacio_publicitario_nosotros;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+}
+/*footer*/
+    .footer_secciones{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px ;
+    padding: 10px;
+}
+
+.pie_secciones, .volver{
+    color: white;
+    text-decoration: none;
+}
+
+.pie{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+/*GALERIA.HTML*/
+/*main*/
+.contenido_galeria{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px; 
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(9 1fr);
+    gap: 10px;
+    grid-template-areas:
+    "nav nav nav"
+    "subitulo_habitaciones subitulo_habitaciones subitulo_habitaciones"
+    "habitacion1 habitacion2 habitacion3"
+    "subtitulo_baños subtitulo_baños subtitulo_baños"
+    "baño1 baño2 baño3"
+    "subtitulo_comedores subtitulo_comedores subtitulo_comedores"
+    "comedor1 comedor2 comedor3"
+    "informacion_extra_galeria informacion_extra_galeria informacion_extra_galeria"
+    "espacio_publicitario_galeria espacio_publicitario_galeria espacio_publicitario_galeria";
+}
+
+.barra_nav{
+    grid-area: nav;
+}
+
+.subtitulos{
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+.titulo_habitaciones{
+    grid-area: subitulo_habitaciones;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.menu_hambur{
+    width: 30px;
+    filter: invert(99%) sepia(62%) 
+    saturate(813%) 
+    hue-rotate(176deg) brightness(116%) 
+    contrast(100%);
+    margin-left: 5px;
+    display: none;
+}
+
+.habitacion1{
+    grid-area: habitacion1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.foto_habitacion1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+.texto_habitacion1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    height: 50px;
+    text-align: justify;
+}
+
+.habitacion2{
+    grid-area: habitacion2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.foto_habitacion2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+.texto_habitacion2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    height: 50px;
+    text-align: justify;
+}
+
+.habitacion3{
+    grid-area: habitacion3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.foto_habitacion3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+.texto_habitacion3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    height: 50px;
+    text-align: justify;
+}
+
+.titulo_baños{
+    grid-area: subtitulo_baños;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.baño1{
+    grid-area: baño1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.foto_baño1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+.texto_baño1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    height: 50px;
+    text-align: justify;
+}
+
+.baño2{
+    grid-area: baño2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.foto_baño2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+.texto_baño2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    height: 50px;
+    text-align: justify;
+}
+
+.baño3{
+    grid-area: baño3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.foto_baño3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+.texto_baño3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    height: 50px;
+    text-align: justify;
+}
+
+.titulo_comedores{
+    grid-area: subtitulo_comedores;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.comedor1{
+    grid-area: comedor1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.foto_comedor1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+.texto_comedor1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    height: 50px;
+    text-align: justify;
+}
+
+.comedor2{
+    grid-area: comedor2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.foto_comedor2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+.texto_comedor2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    height: 50px;
+    text-align: justify;
+}
+
+.comedor3{
+    grid-area: comedor3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.foto_comedor3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 200px;
+}
+
+.texto_comedor3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    height: 50px;
+    text-align: justify;
+}
+
+.informacion_extra_galeria{
+    grid-area: informacion_extra_galeria;
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.espacio_publicitario_galeria{
+    grid-area: espacio_publicitario_galeria;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+/*PROTOCOLOS*/
+.contenido_protocolos{
+    display: grid;
+    gap: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    grid-template-columns: repeat(3 1fr);
+    grid-template-rows: repeat(6 1fr);
+    grid-template-areas: 
+    "nav nav nav"
+    "consejos consejos consejos"
+    "viajes viajes viajes"
+    "cuidados cuidados cuidados"
+    "informacion_extra_protocolos informacion_extra_protocolos informacion_extra_protocolos"
+    "espacio_publicitario_protocolos espacio_publicitario_protocolos espacio_publicitario_protocolos";
+}
+
+.barra_nav{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.consejos{
+    grid-area: consejos;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.foto_app, .foto_banner2{
+    width: 200px;
+    height: 170px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.foto_banner{
+    width: 400px;
+    height: 170px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.texto_protocolos{
+    color: white;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    width: 200px;
+    height: 170px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.texto_protocolos2{
+    color: white;
+    font-family: 'Righteous', cursive;
+    text-align: justify;
+    width: 320px;
+    height: 170px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.viajes{
+    grid-area: viajes;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.texto_protocolos3{
+    color: white;
+    font-family: 'Righteous', cursive;
+    text-align: justify;    
+    width: 600px;
+    height: 300px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.foto_viajes{
+    width: 600px;
+    height: 300px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.cuidados{
+    grid-area: cuidados;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.video{
+    padding-left: 5px;
+}
+
+.informacion_extra_protocolos{
+    grid-area: informacion_extra_protocolos;
+    margin-bottom: 20px;
+}
+
+.espacio_publicitario_protocolos{
+    grid-area: espacio_publicitario_protocolos;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+/*RESERVAS.HTML*/
+.contenido_reservas{
+    display: grid;
+    gap: 10px;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4 1fr);
+    grid-template-areas: 
+    "nav"
+    "formulario_reservas"
+    "informacion_extra_reservas"
+    "espacio_publicitario_reservas"
+}
+
+.barra_nav_reservas{
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.formulario_reservas{
+    grid-area: formulario_reservas;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono_tarjetas{
+    background-color: none;
+    width: 250px;
+    height: 50px;
+    padding-left: 1rem;
+}
+
+.margen_form{
+    padding-left: 1rem;
+}
+
+.encabezado{
+    padding-top: 1rem;
+}
+
+.botoncito{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50%;
+    padding: 1rem;
+}
+
+.informacion_extra_reservas{
+    grid-area: informacion_extra_reservas;
+    margin-bottom: 20px;
+}
+
+.espacio_publicitario_reservas{
+    grid-area: espacio_publicitario_reservas;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+/*MEDIA QUERIES*/
+/*INDEX_MOBILE*/
+@media only screen and (max-width: 320px){
+/*header*/
+.encabezado_index{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 320px;
+    height: 150px;
+}
+
+.logo{
+    width: 170px;
+    height: 120px;
+}
+
+.logo_index{
+    width: 150px;
+    height: 100px;
+    animation-name: none;
+}
+
+.menu_index{
+    display: none;}
+/*main*/
+.secciones{
+    font-size: 10px;
+}
+
+.fotos_index{
+    padding: 5px;
+    width: 260px;
+}
+
+.fotos{
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+}
+
+.foto1, .foto2{
+    width: 200px;
+    height: 100px;
+}
+
+.formulario_index{
+    display: none;
+}
+
+.texto_general{
+    padding: 5px;
+    width: 260px;
+}
+
+.texto{
+    text-align: center;
+    font-size: 10px;
+}
+
+.informacion_extra_index{
+    width: 260px;
+    padding: 5px;
+}
+
+.iconos_redes{
+    width: 10px;
+}
+
+.espacio_publicitario_index{
+    display: none;
+}
+/*footer*/
+.pie{
+    width: 10px;
+    margin-left: 2px;
+    margin-top: 2px;
+}
+
+.pie_de_pag{    
+    font-size: 10px;
+}
+/*NOSOTROS_MOBILE*/
+/*header*/
+.encabezado_secciones{
+    width: 320px;
+    height: 100px;
+}
+
+.titulo{
+    font-family: 'Playball', cursive;
+    font-size: 30px;
+    text-align: center;
+    width: 200px;
+}
+/*main*/
+
+.foto_nosotros{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding: 0px;
+    width: 260px;
+    height: 250px;
+}
+
+.foto_hermanos{
+    width: 150px;
+    height: 200px;
+    margin-bottom: 0px;
+}
+
+.epigrafe{
+    display: none;
+}
+
+.texto_nosotros{
+    padding: 5px;
+    width: 260px;
+}
+
+.mapa{
+    display: none;
+}
+
+.informacion_extra_nosotros{ 
+    width: 260px;
+    height: 200px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.espacio_publicitario_nosotros{
+    display: none;}
+/*footer*/
+.footer_secciones{
+    margin-top: 20px ;
+    padding: 5px;
+    font-size: 10px;
+}
+/*GALERIA_MOBILE*/
+/*body*/
+.subtitulos{
+    font-size: 10px;
+    padding: 5px;
+    width: 100px;
+    text-align: center;
+}
+
+.titulo_habitaciones, .titulo_baños,
+.titulo_comedores{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+}
+
+.menu_hambur{
+    width: 15px;
+    display: block;
+}
+.foto_baño1, .foto_baño2, .foto_baño3, 
+.foto_comedor1, .foto_comedor2, .foto_comedor3,
+.foto_habitacion1, .foto_habitacion2, .foto_habitacion3,
+.texto_habitacion1, .texto_habitacion2, .texto_habitacion3,
+.texto_baño1, .texto_baño2, .texto_baño3,
+.texto_comedor1, .texto_comedor2, .texto_comedor3{
+    display: none;
+}
+
+.informacion_extra_galeria{
+    width: 260px;
+    height: 100px;
+    padding: 5px;
+}
+
+
+.espacio_publicitario_galeria{
+    display: none;
+}
+/*PROTOCOLOS_MOBILE*/
+.consejos{
+    width: 260px;
+    padding: 5px;
+}
+
+.foto_app, .foto_banner, .foto_banner2, .foto_viajes{
+    display: none;
+}
+
+.texto_protocolos{
+    font-size: 10px;
+    width: 240px;
+    height: 100px;    
+}
+
+.texto_protocolos2{
+    display: none;
+}
+
+.viajes{
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+}
+
+.texto_protocolos3{
+    font-size: 10px;
+    display: block;
+    height: 110px;
+    padding: 10px;
+    width: 200px;
+}
+
+.cuidados{
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    padding: 5px;
+}
+
+.p_protocolo{
+    font-size: 10px;
+    display: block;
+    padding: 10px;
+    width: 150px;
+    margin-bottom: 5px;
+}
+
+.video{
+    width: 250px;
+    height: 150px;
+}
+
+.informacion_extra_protocolos{
+    width: 260px;
+    padding: 5px;
+}
+
+.espacio_publicitario_protocolos{
+    display: none;
+}
+/*RESERVAS_MOBILE*/
+.contenido_reservas{
+margin: 0px;
+}
+
+.formulario_reservas{
+    width: 280px;
+    height: 820px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 0px;
+}
+.contenido_for{
+    padding: 10px;
+}
+
+.icono_tarjetas{
+    display: none;
+}
+
+label{
+    display: block;
+    margin: 2px;
+}
+
+select{
+    font-size: 10px;
+}
+
+.botoncito{
+    width: 100px;
+    padding: 0px;
+    font-size: 10px;
+    font-style: oblique;
+    margin-left: 30%;
+}
+
+.informacion_extra_reservas{
+    width: 300px;
+    height: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.espacio_publicitario_reservas{
+    display: none;}
+
+}

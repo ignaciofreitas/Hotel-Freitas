@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./estilos.css">
+        <link rel="shortcut icon" href="./favicon_io/android-chrome-512x512.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Hurricane&family=Inspiration&family=Major+Mono+Display&family=Righteous&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cinzel&family=Fredoka+One&family=Gloria+Hallelujah&family=Playball&family=Righteous&display=swap"
+            rel="stylesheet">
+        <title>Reservas</title>
+    </head>
+    <body>
+        <header class="encabezado_secciones">
+            <h1 class="titulo">Hace tu reserva</h1>
+        </header>
+        <main class="contenido_reservas">
+            <div class="barra_nav_reservas">
+                <nav >
+                    <ul class="lista_nav">
+                        <li class="secciones"><a class="link" href="././nosotros.html">Quienes somos?</a></li>
+                        <li class="secciones"><a class="link" href="./galeria.html">Galeria</a></li>
+                        <li class="secciones"><a class="link" href="./protocolos.html">Protocolo Covid-19</a></li>
+                        <li class="secciones">Reservas</a></li>
+                    </ul>
+                </nav>
+            </div> 
+            <div class="formulario_reservas">
+                <form action="" class="contenido_for">
+                    <fieldset>
+                        <div class="texto separado margen_form encabezado">
+                            <label  for="Sucursal">Sucursal:
+                                <select name="medio_de_pago" id="">
+                                    <option value="Argentina">Buenos Aires, Argentina</option>
+                                    <option value="Uruguay">Montevideo, Uruguay</option>
+                                    <option value="Chile">Santiago, Chile</option>
+                                </select>
+                            </label>
+                            <label for="medio_de_pago">Forma de pago:
+                                <select name="medio_de_pago" id="">
+                                    <option value="Efectivo">Efectivo</option>
+                                    <option value="Tarjeta_de_credito_debito">Tarjeta de credito/debito</option>
+                                    <option value="Transferencia">Transferencia</option>
+                                </select>
+                            </label>
+                        </div>
+                        <div class="texto separado margen_form">
+                            <label for="tarjetas">Aceptamos todas las tarjetas:</label>
+                            <label for="Visa">Visa
+                                <input type="radio" name="tarjeta" id="" >
+                            </label>
+                            <label for="Master">Master Card
+                                <input type="radio" name="tarjeta" id="" >
+                            </label>
+                            <label for="American">American Express
+                                <input type="radio" name="tarjeta" id="" >
+                            </label>                    
+                        </div>
+                        <div>
+                            <img class="icono_tarjetas separado " src="./multimedia/tarjetas.png" alt="">
+                        </div>
+                        <div class="texto separado margen_form">
+                            <label for="CheckIn">Fecha de ingreso:
+                                <input type="date" value="--/--/----">
+                            </label>
+                            <label for="CheckOut">Fecha de egreso:
+                                <input type="date" value="--/--/----">
+                            </label>
+                        </div>
+                        <div class="texto separado margen_form">
+                            <label for="Huesped1">Nombre:
+                                <input type="name" value="">
+                            </label>
+                            <label for="Huesped2">Apellido:
+                                <input type="name" value="">
+                            </label>
+                            <label for="Huesped1">Edad:
+                                <select name="edad" id="">
+                                    <option value="Menor">0 a 7 años</option>
+                                    <option value="Menor">7 a 15 años</option>
+                                    <option value="Menor">15 a 21 años</option>
+                                    <option value="Mayor">Mayor de 21 años</option>
+                                </select>                
+                            </label>
+                        </div>
+                        <div class="texto separado margen_form">
+                            <label for="Huesped2">Nombre 2:
+                                <input type="name" value="">
+                            </label>
+                            <label for="Huesped2">Apellido 2:
+                                <input type="name" value="">
+                            </label>
+                            <label for="Huesped2">Edad 2:
+                                <select name="edad" id="">
+                                    <option value="Menor">0 a 7 años</option>
+                                    <option value="Menor">7 a 15 años</option>
+                                    <option value="Menor">15 a 21 años</option>
+                                    <option value="Mayor">Mayor de 21 años</option>
+                                </select>                
+                            </label>
+                        </div>
+                        <div class="texto separado margen_form">
+                            <label for="Huesped3">Nombre 3:
+                                <input type="name" value="">
+                            </label>
+                            <label for="Huesped3">Apellido 3:
+                                <input type="name" value="">
+                            </label>
+                            <label for="Huesped3">Edad 3:
+                                <select name="edad" id="">
+                                    <option value="Menor">0 a 7 años</option>
+                                    <option value="Menor">7 a 15 años</option>
+                                    <option value="Menor">15 a 21 años</option>
+                                    <option value="Mayor">Mayor de 21 años</option>
+                                </select>                
+                            </label>
+                        </div>
+                        <div class="texto separado margen_form">
+                            <label for="Huesped4">Nombre 4:
+                                <input type="name" value="">
+                            </label>
+                            <label for="Huesped4">Apellido 4:
+                                <input type="name" value="">
+                            </label>
+                            <label for="Huesped4">Edad 4:
+                                <select name="edad" id="">
+                                    <option value="Menor">0 a 7 años</option>
+                                    <option value="Menor">7 a 15 años</option>
+                                    <option value="Menor">15 a 21 años</option>
+                                    <option value="Mayor">Mayor de 21 años</option>
+                                </select>                
+                            </label>
+                        </div>
+                        <div class="texto separado margen_form">
+                            <label for="Confirmar" >Confirmo que los datos son correctos</label>
+                            <input type="checkbox" name="" id="">
+                        </div>
+                        <input type="submit" value="Reservar" class="botoncito">                
+                    </fieldset>
+                </form>
+            </div>    
+            <div class="informacion_extra_reservas">
+                <table class="tabla">
+                    <tr>
+                        <td class="texto">Donde estamos:</td>
+                        <td class="texto">Conectate</td>
+                    </tr>                    
+                        <td class="texto">Calle Falsa 123, Buenos Aires, Argentina</td>
+                        <td class="texto"> 
+                            <img class="iconos_redes" src="./multimedia/twitter-icon-circle-black-logo.png"alt="twitter-icon-circle-black-logo" width="10px">
+                            <img class="iconos_redes" src="./multimedia/fb_icon-icons.com_65434.svg" alt="facebook" width="10px">
+                            <img class="iconos_redes" src="./multimedia/Instagram_Rounded_icon-icons.com_61576.svg" alt="instagram" width="10px">
+                        </td>
+                </table> 
+            </div>
+            <div class="espacio_publicitario_reservas">
+                <img src="./multimedia/world_online_connection_global_web_network_internet_icon_219297.svg" alt="" class="iconos_pie">
+                <img src="./multimedia/avion.svg" alt="" class="iconos_pie">
+                <img src="./multimedia/hotel.svg" alt="" class="iconos_pie">
+                <img src="./multimedia/breakfast_hotel_icon_141808.svg" alt="" class="iconos_pie">
+            </div>     
+        </main>        
+        <footer class="footer_secciones">
+            <div>
+                <p class="pie_secciones">
+                    <img src="./multimedia/copyright-symbol.png" alt="copy" class="pie">    
+                    Copyright © 1999-2022 Hotel De Lujo S.R.L.
+                </p>
+            </div>
+            <div>    
+                <p>
+                    <a class="volver" href="./index.html">Volver al Home</a>    
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
