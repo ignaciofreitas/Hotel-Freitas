@@ -257,7 +257,6 @@ text-align: center;
 }
 
 .botoncito:hover{
-    background-color: blue;
     background-color: white;
     color: grey;
 }
