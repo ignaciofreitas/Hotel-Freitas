@@ -1,84 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos.css" />
-    <link rel="shortcut icon" href="./favicon_io/android-chrome-512x512.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Hurricane&family=Inspiration&family=Major+Mono+Display&family=Righteous&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cinzel&family=Fredoka+One&family=Gloria+Hallelujah&family=Righteous&display=swap"
-        rel="stylesheet">
-    <title>Hotel De Lujo</title>
+    <head>
+        <html lang="en">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+            </script>
+        <link rel="stylesheet" href="estilos.css" />
+        <link rel="shortcut icon" href="./favicon_io/android-chrome-512x512.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Hurricane&family=Inspiration&family=Major+Mono+Display&family=Righteous&display=swap"
+            rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Cinzel&family=Fredoka+One&family=Gloria+Hallelujah&family=Righteous&display=swap"
+            rel="stylesheet">
+        <title>Hotel De Lujo</title>
+    </head>
     <body>
-        <header class="encabezado_index">
-            <div class="logo">
-                <img src="./multimedia/Logo.jpg" alt="" class="logo_index">
-            </div>
-            <div class="menu_index">
-                <img src="./multimedia/Help_icon-icons.com_55891.svg" alt="ayuda" class="ayuda">
-                <button >
-                    <img src="./multimedia/magnifier.png" alt="lupa" width="20px">
-                    <input type="text">
-                </button>
-                <img class="login" src="./multimedia/account_avatar_face_man_people_profile_user_icon_123197.svg" alt="login">  
-                <input type="submit" value="Ingresar" class="boton1_index">
-                <input type="submit" value="Registrarse" class="boton2_index">
-            </div>  
+        <header class="conteiner e_index">
+                <div class="row col-sm-12 col-md-12 col-lg-12">
+                    <img src="./multimedia/Logo.jpg" alt="logo_empresa" class="logo_index">
+                </div>
+            <nav class="navbar navbar-expand-lg navbar-light row  col-sm-12 col-md-12 col-lg-12">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active text-light" aria-current="page" href="./galeria.html">Galeria</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./protocolos.html">Protocolos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="./reservas.html">Reservas</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                            <button class="btn btn-outline-warning" type="submit">Ir
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
         </header>
-        <main class="contenido_index">
-            <div class="barra_nav">
-                <nav >
-                    <ul class="lista_nav">
-                        <li class="secciones"><a class="link" href="./nosotros.html">Quienes somos?</a></li>
-                        <li class="secciones"><a class="link" href="./galeria.html">Galeria</a></li>
-                        <li class="secciones"><a class="link" href="./protocolos.html">Protocolo Covid-19</a></li>
-                        <li class="secciones"><a class="link" href="./reservas.html">Reservas</a></li>
-                    </ul>
-                </nav>
-            </div>        
-            <div class="fotos_index">
-                <section class="fotos">
-                    <img src="./multimedia/foto1.jpg" alt="imagen1" class="foto1">
-                    <img src="./multimedia/foto2.jpg" alt="imagen2" class="foto2">
-                </section>    
+        <main class="conteiner m_index">
+            <div class="row col-sm-12 col-md-12 col-lg-12">
+                <img src="./multimedia/foto1.jpg" alt="imagen1" class="foto1 col-sm-8 col-md-4 col-lg-4" >
+                <img src="./multimedia/foto2.jpg" alt="imagen2" class="foto2 col-sm-8 col-md-4 col-lg-4">
             </div>
-            <div class="formulario_index">
-                <form action="">
-                    <fieldset>
-                        <legend class="texto_form">Contactanos</legend>
-                        <div class="texto_form">
-                            <label for="Nombre">Nombre:</label>
-                            <input type="text" name="Nombre">
-                        </div>
-                        <div class="texto_form">
-                            <label for="Apellido">Apellido:</label>
-                            <input type="text" name="Apellido">
-                        </div>
-                        <div class="texto_form">
-                            <label  for="Email de contacto">Email de contacto:</label>
-                            <input type="email" name="Email de contacto"  placeholder="nombre@ejemplo.com">
-                        </div>                
-                        <div >
-                            <label class="texto_form" for="Comentario">Dejanos tu comentario:</label>
-                        </div>
-                        <div class="comentario_form">
-                            <textarea  name="comentario" cols="30" rows="20"></textarea>
-                        </div>
-                        <div>    
-                            <button class="boton_form" >Enviar Datos</button>
-                        </div>                    
-                    </fieldset>
-                </form>
-            </div>
-            <div class="texto_general">
-                <p class="texto">Moderno, vanguardista y cosmopolita, Hotel De Lujo Suites es un vivo ejemplo de lo que
+            <div class="row col-sm-12 col-md-12 col-lg-12">
+                <p class="col-sm-12 col-md-12 col-lg-6 texto_general p_texto">Moderno, vanguardista y cosmopolita, Hotel De Lujo Suites es un vivo ejemplo de lo que
                 siempre fue la capital argentina.
                 Te presentamos un nuevo concepto de Hotel en Buenos Aires:
                 Ubicado estratégicamente en pleno centro porteño, a pasos de los principales atractivos turísticos
@@ -88,34 +75,66 @@
                 convirtiéndolo en un exclusivo Hotel en Buenos Aires con un marcado carácter moderno y elegante.
                 En el Hotel De Lujo Suites nuestra consigna es lograr su satisfacción. Reserve ahora al mejor precio
                 en la web oficial de HDL Hoteles..</p>
-                </p>
-            </div>        
-            <div class="informacion_extra_index">               
+                <form action="" class="col-sm-12 col-md-12 col-lg-3 form_index">
+                    <fieldset>
+                        <legend class="texto_general">Contactanos</legend>
+                        <div class="texto_general">
+                            <label for="Nombre">Nombre:</label>
+                            <input type="text" name="Nombre">
+                        </div>
+                        <div class="texto_general">
+                            <label for="Apellido">Apellido:</label>
+                            <input type="text" name="Apellido">
+                        </div>
+                        <div class="texto_general">
+                            <label for="Email de contacto">Email de contacto:</label>
+                            <input type="email" name="Email de contacto" placeholder="nombre@ejemplo.com">
+                        </div>
+                        <div>
+                            <label class="texto_general" for="Comentario">Dejanos tu comentario:</label>
+                        </div>
+                        <div class="comentario_general">
+                            <textarea name="comentario" cols="20" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <button class="boton_form">Enviar Datos</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="row col-sm-6 col-md-6 col-lg-3">
                 <table class="tabla">
                     <tr>
-                        <td class="texto">Donde estamos:</td>
-                        <td class="texto">Conectate</td>
-                    </tr>                    
-                        <td class="texto">Calle Falsa 123, Buenos Aires, Argentina</td>
-                        <td class="texto"> 
-                            <img class="iconos_redes" src="./multimedia/twitter-icon-circle-black-logo.png"alt="twitter-icon-circle-black-logo" width="10px">
-                            <img class="iconos_redes" src="./multimedia/fb_icon-icons.com_65434.svg" alt="facebook" width="10px">
-                            <img class="iconos_redes" src="./multimedia/Instagram_Rounded_icon-icons.com_61576.svg" alt="instagram" width="10px">
-                        </td>
-                </table>          
+                        <td class="texto_general">Donde estamos:</td>
+                        <td class="texto_general">Conectate</td>
+                    </tr>
+                    <td class="texto_general">Calle Falsa 123, Buenos Aires, Argentina</td>
+                    <td class="texto">
+                        <img class="iconos_redes" src="./multimedia/twitter-icon-circle-black-logo.png"
+                            alt="twitter-icon-circle-black-logo" width="10px">
+                        <img class="iconos_redes" src="./multimedia/fb_icon-icons.com_65434.svg" alt="facebook"
+                            width="10px">
+                        <img class="iconos_redes" src="./multimedia/Instagram_Rounded_icon-icons.com_61576.svg"
+                            alt="instagram" width="10px">
+                    </td>
+                </table>
             </div>
-            <div class="espacio_publicitario_index">
-                <img src="./multimedia/world_online_connection_global_web_network_internet_icon_219297.svg" alt="" class="iconos_pie">
+            <div class="espacio_publicitario row col-sm-12 col-md-12 col-lg-12">
+                <img src="./multimedia/world_online_connection_global_web_network_internet_icon_219297.svg" alt=""
+                    class="iconos_pie">
                 <img src="./multimedia/avion.svg" alt="" class="iconos_pie">
                 <img src="./multimedia/hotel.svg" alt="" class="iconos_pie">
                 <img src="./multimedia/breakfast_hotel_icon_141808.svg" alt="" class="iconos_pie">
-            </div>        
+            </div>
         </main>
-        <footer class="footer_index"> 
-            <p class="pie_de_pag">
-                <img class="pie" src="./multimedia/copyright-symbol.png" alt="copy">
-                Copyright © 1999-2022 Hotel De Lujo S.R.L.
-            </p>                
-        </footer>    
+        <footer class=" conteiner f_index">
+            <div class="row col-sm-12 col-md-12 col-lg-12">
+                <p class="pie_de_pag">
+                    <img class="pie" src="./multimedia/copyright-symbol.png" alt="copy">
+                    Copyright © 1999-2022 Hotel De Lujo S.R.L.
+                </p>
+            </div>
+        </footer>
     </body>
+
 </html>
