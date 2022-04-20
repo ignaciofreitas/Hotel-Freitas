@@ -32,12 +32,6 @@ body{
     margin-top: 50px;
 }
 
-.p_texto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    font-size: 15px;
-}
 
 .foto1, .foto2{
     height: 200px;
@@ -58,8 +52,10 @@ body{
     color: white;
     font-family: 'Righteous', cursive;
     margin-bottom: 20px;
-    margin-left: 10px;
-    padding: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    text-align: center;
+    font-size: 15px;
 }
 
 .iconos_redes{
@@ -130,6 +126,10 @@ body{
     margin-bottom: 10px;
 }
 
+.epigrafe{
+    text-align: center;
+}
+
 .mapita{
     width: 400px;
     height: 400px;
@@ -169,14 +169,11 @@ body{
     color: white;
     font-family: 'Righteous', cursive;
 }
-.menu_hambur{
-    width: 30px;
-    filter: invert(99%) sepia(62%) 
-    saturate(813%) 
-    hue-rotate(176deg) brightness(116%) 
-    contrast(100%);
-    margin-left: 5px;
-    display: none;
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .fotos_galeria{
@@ -184,7 +181,7 @@ body{
     transition: opacity .8s;
     width: 200px;
     height: 150px;
-    margin-left: 10px;
+    padding-top: 10px;
 }
 
 .fotos_galeria:hover{
@@ -198,33 +195,12 @@ text-align: center;
 .m_protocolos{
     margin-top: 50px;
 }
-.foto_app, .foto_banner2{
-    padding: 5px;
+.foto_app, .foto_banner, .foto_banner2{
+    
     height: 170px;
-    margin: 10px;
+    margin: 5px;
 }
-
-.foto_banner{
-    height: 170px;
-    padding: 5px;
-    margin-left: 10px;
-}
-
-.texto_protocolos{
-    color: white;
-    font-family: 'Righteous', cursive;
-    text-align: center;
-    padding: 10px;
-}   
-
-.texto_protocolos3{
-    color: white;
-    font-family: 'Righteous', cursive;
-    text-align: justify;    
-    height: 300px;
-    padding-left: 20px;
-}
-
+ 
 .foto_viajes{
     height: 300px;
     padding: 5px;
@@ -247,6 +223,10 @@ text-align: center;
     padding-left: 1rem;
 }
 
+.separado{
+    margin: 10px;
+}
+
 .botoncito{
     margin-top: 20px;
     margin-bottom: 20px;
@@ -259,4 +239,34 @@ text-align: center;
 .botoncito:hover{
     background-color: white;
     color: grey;
+}
+
+@media only screen and (max-width: 749px){
+
+.logo_index{
+    animation: none;
+}
+
+.mapita{
+    width: 300px;
+    height: 300px;
+}
+
+.titulo{
+    font-size: 40px;
+}
+
+.subtitulos{
+    font-size: 20px;
+}
+
+.foto_app, .foto_banner, .foto_banner2{
+    height: 150px;
+    margin: 0px;
+}
+
+.icono_tarjetas{
+    display: none;
+}
+
 }
