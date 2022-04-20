@@ -274,4 +274,13 @@ text-align: center;
     display: none;
 }
 
+.f_index, .f_secciones{
+
+    font-size: 10px;
+}
+
+.pie{
+    width: 10px;
+}
+
 }
