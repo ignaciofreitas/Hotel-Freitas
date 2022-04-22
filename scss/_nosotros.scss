@@ -1,0 +1,58 @@
+/*NOSOTROS.HTML*/
+.e_secciones{
+    div{
+        .titulo{
+            color: $color-texto;
+            text-decoration:underline;
+            font-size:$tamanio_titulos;
+            padding: 20px;
+            text-align: center;
+            font-family: $letra_titulos;
+        }
+        .navbar{
+            padding-left: 10px;
+            margin-right: 10px;
+        }
+    }
+}
+.m_nosotros{
+    margin-top: 50px;
+    
+    .foto_nosotros{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin-top: 20px;
+        text-align: center;
+        .foto_hermanos{
+            width: 300px;
+            height: 400px;
+            margin-bottom: 10px;
+        }               
+    }     
+    .mapa{
+        .texto_mapa{
+            color: $color-texto;
+            font-family: 'Righteous', cursive;
+            margin-bottom: 20px;
+            padding-right: 20px;
+            padding-left: 20px;
+            font-size: 15px;
+        }
+        .mapita{
+            width: 400px;
+            height: 400px;
+            margin-bottom: 20px;
+            padding-left: 40px;
+        &:hover{
+            transform: skew(5deg, 5deg);
+            }
+        }
+    }
+
+}
+
+
+

@@ -1,0 +1,155 @@
+$color_texto: #ffffff;
+$tamanio_titulos: 70px;
+$letra_titulos: 'Cinzel', serif;
+$tamanio_subtitulos: 30px;
+$letra_subtitulos: 'Righteous', cursive;
+
+
+body{
+    background-image:url(../multimedia/back_img.jpg);
+    background-size: cover;}
+    div{
+        .texto_general{
+        color: $color-texto;
+        font-family: 'Righteous', cursive;
+        margin-bottom: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        text-align: center;
+        font-size: 15px;
+        }
+    }
+    div{
+        .tabla{
+            margin-top: 50px;
+            td{
+                .iconos_redes{
+                width: 20px;
+                filter: invert(99%) sepia(62%) saturate(813%) 
+                hue-rotate(176deg) brightness(116%) contrast(100%);
+                }
+            }
+        }        
+    }
+    .espacio_publicitario{
+        display: flex;
+        flex-direction: row;
+        padding: 10px;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 50px;
+        .iconos_pie{
+            width: 50px;
+            height: 40px;
+            filter: invert(15%) sepia(18%) 
+            saturate(6865%) hue-rotate(302deg) 
+            brightness(106%) contrast(127%);
+        }        
+    }
+    .e_secciones{
+        div{
+            .titulo{
+                color: $color-texto;
+                text-decoration:underline;
+                font-size:$tamanio_titulos;
+                padding: 20px;
+                text-align: center;
+                font-family: $letra_titulos;
+            }
+            .navbar{
+                padding-left: 10px;
+                margin-right: 10px;
+            }
+        }
+    }
+    .f_secciones{
+        text-align: center;
+    div{
+        .pie_secciones{
+            color:$color-texto;
+        }
+    }
+    div{
+        p{
+            .volver{
+                color: $color-texto;
+                text-decoration: none;
+            }
+        }
+    }
+    fieldset{
+        .separado{
+            margin: 10px;
+        }
+    }
+}   
+@import "index";
+@import "nosotros";
+@import "galeria";
+@import "protocolos";
+@import "reservas";
+
+@media only screen and (max-width: 749px){
+
+header{
+    div{
+        .logo_index{
+            animation: none;
+        }
+    }
+}
+.m_nosotros{
+    .mapa{
+        .mapita{
+            width: 300px;
+            height: 300px;  
+        }
+    }
+}    
+.e_secciones{
+    div{
+        .titulo{
+            font-size: 40px;
+        }
+    }
+}
+
+.m_galeria{
+    div{
+        .subtitulos{
+            font-size: 20px;
+        }
+    }
+}
+
+.m_protocolos{
+    div{
+        .foto_app, .foto_banner, .foto_banner2{
+            height: 150px;
+            margin: 0px;
+        }
+    }
+}   
+    
+.m_reservas{
+    div{
+        .icono_tarjetas{
+            display: none;
+        }    
+    }
+}
+
+.f_index, .f_secciones{
+        font-size: 10px;
+    }
+.f_secciones{
+    div{
+        .pie_secciones{
+            .pie{
+                width: 10px;
+            }
+        }
+    }
+    
+}
+}

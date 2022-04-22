@@ -1,0 +1,77 @@
+/*INDEX.HTML*/
+header{
+    
+    div{
+        .logo_index{
+        width: 500px;
+        height: 150px;
+        margin-bottom: 20px;
+        animation-name: efecto_logo;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in;
+        animation-duration: 2s;
+        }
+    }
+    .navbar{
+        padding-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+    @keyframes efecto_logo {
+        0%{ width: 500px; border: dotted $color-texto 10px;margin-left: 15px;}
+        25%{ width: 400px; border: dotted $color-texto 10px;margin-left: 10px;}
+        50%{ width: 350px;border: dotted $color-texto 10px;margin-left: 5px;}
+        75%{ width: 400px;border: dotted $color-texto 10px;margin-left: 10px;}
+        100%{ width: 500px;
+        border: dotted $color-texto 10px;
+        margin-left: 15px;
+    }
+    
+}
+
+.m_index{
+    margin-top: 50px;
+    
+    div{
+        .foto1, .foto2{
+        height: 200px;
+        margin: 5px;
+        }    
+    }
+
+    .form_index{
+        div{
+            .boton_form{
+            margin-left: 20px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            }
+        }
+    }
+}
+
+
+.f_index{
+    margin-top: 100px;
+    div{
+        .pie_de_pag{    
+            text-align: center;
+            color: $color-texto;
+            padding: 10px;
+            height: 40px;
+            margin: 5px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
