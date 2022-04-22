@@ -1,0 +1,223 @@
+body {
+  background-image: url(../multimedia/back_img.jpg);
+  background-size: cover; }
+
+div .texto_general {
+  color: #ffffff;
+  font-family: 'Righteous', cursive;
+  margin-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  font-size: 15px; }
+
+div .tabla {
+  margin-top: 50px; }
+  div .tabla td .iconos_redes {
+    width: 20px;
+    filter: invert(99%) sepia(62%) saturate(813%) hue-rotate(176deg) brightness(116%) contrast(100%); }
+
+.espacio_publicitario {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px; }
+  .espacio_publicitario .iconos_pie {
+    width: 50px;
+    height: 40px;
+    filter: invert(15%) sepia(18%) saturate(6865%) hue-rotate(302deg) brightness(106%) contrast(127%); }
+
+.e_secciones div .titulo {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 70px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Cinzel", serif; }
+
+.e_secciones div .navbar {
+  padding-left: 10px;
+  margin-right: 10px; }
+
+.f_secciones {
+  text-align: center; }
+  .f_secciones div .pie_secciones {
+    color: #ffffff; }
+  .f_secciones div p .volver {
+    color: #ffffff;
+    text-decoration: none; }
+  .f_secciones fieldset .separado {
+    margin: 10px; }
+
+/*INDEX.HTML*/
+header div .logo_index {
+  width: 500px;
+  height: 150px;
+  margin-bottom: 20px;
+  animation-name: efecto_logo;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 2s; }
+
+header .navbar {
+  padding-left: 10px;
+  margin-right: 10px; }
+
+@keyframes efecto_logo {
+  0% {
+    width: 500px;
+    border: dotted #ffffff 10px;
+    margin-left: 15px; }
+  25% {
+    width: 400px;
+    border: dotted #ffffff 10px;
+    margin-left: 10px; }
+  50% {
+    width: 350px;
+    border: dotted #ffffff 10px;
+    margin-left: 5px; }
+  75% {
+    width: 400px;
+    border: dotted #ffffff 10px;
+    margin-left: 10px; }
+  100% {
+    width: 500px;
+    border: dotted #ffffff 10px;
+    margin-left: 15px; } }
+
+.m_index {
+  margin-top: 50px; }
+  .m_index div .foto1, .m_index div .foto2 {
+    height: 200px;
+    margin: 5px; }
+  .m_index .form_index div .boton_form {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+
+.f_index {
+  margin-top: 100px; }
+  .f_index div .pie_de_pag {
+    text-align: center;
+    color: #ffffff;
+    padding: 10px;
+    height: 40px;
+    margin: 5px; }
+
+/*NOSOTROS.HTML*/
+.e_secciones div .titulo {
+  color: #ffffff;
+  text-decoration: underline;
+  font-size: 70px;
+  padding: 20px;
+  text-align: center;
+  font-family: "Cinzel", serif; }
+
+.e_secciones div .navbar {
+  padding-left: 10px;
+  margin-right: 10px; }
+
+.m_nosotros {
+  margin-top: 50px; }
+  .m_nosotros .foto_nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center; }
+    .m_nosotros .foto_nosotros .foto_hermanos {
+      width: 300px;
+      height: 400px;
+      margin-bottom: 10px; }
+  .m_nosotros .mapa .texto_mapa {
+    color: #ffffff;
+    font-family: 'Righteous', cursive;
+    margin-bottom: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 15px; }
+  .m_nosotros .mapa .mapita {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 20px;
+    padding-left: 40px; }
+    .m_nosotros .mapa .mapita:hover {
+      transform: skew(5deg, 5deg); }
+
+/*GALERIA.HTML*/
+.m_galeria {
+  margin-top: 50px; }
+  .m_galeria div .subtitulos {
+    font-size: 30px;
+    padding: 5px;
+    text-align: center;
+    color: #ffffff;
+    font-family: "Righteous", cursive; }
+  .m_galeria .card-group .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .m_galeria .card-group .card .fotos_galeria {
+      opacity: 0.4;
+      transition: opacity .8s;
+      width: 200px;
+      height: 150px;
+      padding-top: 10px; }
+      .m_galeria .card-group .card .fotos_galeria:hover {
+        opacity: 1; }
+
+/*PROTOCOLOS.HTML*/
+.m_protocolos {
+  margin-top: 50px; }
+  .m_protocolos div .foto_app, .m_protocolos div .foto_banner, .m_protocolos div .foto_banner2 {
+    height: 170px;
+    margin: 5px; }
+  .m_protocolos div .foto_viajes {
+    height: 300px;
+    padding: 5px;
+    margin-left: 5px; }
+  .m_protocolos div .subtitulo_video {
+    margin-left: 10px; }
+  .m_protocolos div .video {
+    padding-left: 30px; }
+
+.m_reservas {
+  margin-top: 50px; }
+  .m_reservas div .icono_tarjetas {
+    width: 250px;
+    height: 50px;
+    margin-left: 50%;
+    margin-bottom: 10px; }
+  .m_reservas div .botoncito {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 50%;
+    padding: 1rem;
+    background-color: grey;
+    color: #ffffff; }
+    .m_reservas div .botoncito:hover {
+      background-color: white;
+      color: grey; }
+
+@media only screen and (max-width: 749px) {
+  header div .logo_index {
+    animation: none; }
+  .m_nosotros .mapa .mapita {
+    width: 300px;
+    height: 300px; }
+  .e_secciones div .titulo {
+    font-size: 40px; }
+  .m_galeria div .subtitulos {
+    font-size: 20px; }
+  .m_protocolos div .foto_app, .m_protocolos div .foto_banner, .m_protocolos div .foto_banner2 {
+    height: 150px;
+    margin: 0px; }
+  .m_reservas div .icono_tarjetas {
+    display: none; }
+  .f_index, .f_secciones {
+    font-size: 10px; }
+  }
