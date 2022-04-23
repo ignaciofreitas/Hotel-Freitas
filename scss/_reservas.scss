@@ -15,7 +15,7 @@
         background-color: grey;
         color: $color-texto;
             &:hover{
-            background-color: white;
+            background-color: $color-texto;
             color: grey;
             }
         }       

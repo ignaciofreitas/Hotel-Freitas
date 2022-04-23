@@ -200,7 +200,7 @@ header .navbar {
     background-color: grey;
     color: #ffffff; }
     .m_reservas div .botoncito:hover {
-      background-color: white;
+      background-color: #ffffff;
       color: grey; }
 
 @media only screen and (max-width: 749px) {
@@ -220,4 +220,5 @@ header .navbar {
     display: none; }
   .f_index, .f_secciones {
     font-size: 10px; }
-  }
+  .f_secciones div .pie_secciones .pie {
+    width: 10px; } }
