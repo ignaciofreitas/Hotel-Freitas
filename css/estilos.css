@@ -209,6 +209,8 @@ header .navbar {
 @media only screen and (max-width: 749px) {
   header div .logo_index {
     animation: none; }
+  header .navbar div div form .registrarse {
+    display: none; }
   header .navbar div div form .login {
     display: none; }
   .m_nosotros .mapa .mapita {
