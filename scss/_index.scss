@@ -15,6 +15,17 @@ header{
     .navbar{
         padding-left: 10px;
         margin-right: 10px;
+        div{
+            div{
+                form{
+                    .login{
+                        width: 40px;
+                        filter: invert(99%) sepia(62%) saturate(813%) 
+                        hue-rotate(176deg) brightness(116%) contrast(100%);
+                    }
+                }
+            }
+        }
     }
 }
 
