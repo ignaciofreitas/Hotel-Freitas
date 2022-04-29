@@ -2,16 +2,24 @@
 .m_protocolos{
     margin-top: 50px;
     div{
-        .foto_app, .foto_banner, .foto_banner2{
-            height: 170px;
-            margin: 5px;
+        .foto_app, .foto_banner{
+            @include fotos_protocolo(170px, 5px);
+        }
+        .foto_banner2{
+            @include fotos_protocolo(160px, 5px);
+        }
+
+        .texto--app{
+            @extend .texto_general;
+            color: yellow;
         }
     }
+
     div{
         .foto_viajes{
-            height: 300px;
-            padding: 5px;
-            margin-left: 5px;
+            height:map-get($foto_viajes,alto);
+            padding:map-get($foto_viajes,padding);
+            margin-left:map-get($foto_viajes,margin-left)
         }
     }
     div{

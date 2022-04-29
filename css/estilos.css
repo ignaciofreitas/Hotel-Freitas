@@ -2,7 +2,7 @@ body {
   background-image: url(../multimedia/back_img.jpg);
   background-size: cover; }
 
-div .texto_general {
+div .texto_general, .m_protocolos div .texto--app {
   color: #ffffff;
   font-family: 'Righteous', cursive;
   margin-bottom: 20px;
@@ -176,9 +176,14 @@ header .navbar {
 /*PROTOCOLOS.HTML*/
 .m_protocolos {
   margin-top: 50px; }
-  .m_protocolos div .foto_app, .m_protocolos div .foto_banner, .m_protocolos div .foto_banner2 {
+  .m_protocolos div .foto_app, .m_protocolos div .foto_banner {
     height: 170px;
     margin: 5px; }
+  .m_protocolos div .foto_banner2 {
+    height: 160px;
+    margin: 5px; }
+  .m_protocolos div .texto--app {
+    color: yellow; }
   .m_protocolos div .foto_viajes {
     height: 300px;
     padding: 5px;

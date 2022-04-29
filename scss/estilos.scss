@@ -4,6 +4,17 @@ $letra_titulos: 'Cinzel', serif;
 $tamanio_subtitulos: 30px;
 $letra_subtitulos: 'Righteous', cursive;
 
+$foto_viajes:(
+    alto: 300px,
+    padding: 5px,
+    margin-left: 5px
+
+);
+
+@mixin fotos_protocolo ($height, $margin){
+    height: $height;
+    margin: $margin    
+}
 
 body{
     background-image:url(../multimedia/back_img.jpg);
