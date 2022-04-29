@@ -1,0 +1,5 @@
+Agregue keywors generales como: "hotel, lujo, alojamiento, vacaciones"
+Agregue una description a cada seccion de mi pagina.
+Le modifique el h1 por un strong en los titulos de cada seccion.
+Aplique map y map-get, tambien un mixin y un extend. Todo en la seccion 
+protocolos
