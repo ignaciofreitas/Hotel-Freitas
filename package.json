@@ -1,7 +1,7 @@
 {
   "name": "hotel_freitas",
   "version": "1.0.0",
-  "description": "",
+  "description": "pagina de alojamiento y disfrute ya sea en familia o para viajes de trabajo donde podes ver las instalaciones, ubicacion y realizar tu reserva en cualquier momento",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
