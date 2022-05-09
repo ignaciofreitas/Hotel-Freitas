@@ -1,7 +1,9 @@
 /*PROTOCOLOS.HTML*/
 .m_protocolos{
     margin-top: 50px;
-    div{
+    .secciones_p{
+        margin-left: 10px;
+        margin-right: 10px;
         .foto_app, .foto_banner{
             @include fotos_protocolo(170px, 5px);
         }
