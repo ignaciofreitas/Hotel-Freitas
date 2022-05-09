@@ -64,28 +64,6 @@ header .navbar {
     width: 40px;
     filter: invert(99%) sepia(62%) saturate(813%) hue-rotate(176deg) brightness(116%) contrast(100%); }
 
-@keyframes efecto_logo {
-  0% {
-    width: 500px;
-    border: dotted #ffffff 10px;
-    margin-left: 15px; }
-  25% {
-    width: 400px;
-    border: dotted #ffffff 10px;
-    margin-left: 10px; }
-  50% {
-    width: 350px;
-    border: dotted #ffffff 10px;
-    margin-left: 5px; }
-  75% {
-    width: 400px;
-    border: dotted #ffffff 10px;
-    margin-left: 10px; }
-  100% {
-    width: 500px;
-    border: dotted #ffffff 10px;
-    margin-left: 15px; } }
-
 .m_index {
   margin-top: 50px; }
   .m_index .img_index {

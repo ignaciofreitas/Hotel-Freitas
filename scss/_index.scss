@@ -28,17 +28,8 @@ header{
     }
 }
 
-    @keyframes efecto_logo {
-        0%{ width: 500px; border: dotted $color-texto 10px;margin-left: 15px;}
-        25%{ width: 400px; border: dotted $color-texto 10px;margin-left: 10px;}
-        50%{ width: 350px;border: dotted $color-texto 10px;margin-left: 5px;}
-        75%{ width: 400px;border: dotted $color-texto 10px;margin-left: 10px;}
-        100%{ width: 500px;
-        border: dotted $color-texto 10px;
-        margin-left: 15px;
-    }
-    
-}
+
+
 
 .m_index{
     margin-top: 50px;
