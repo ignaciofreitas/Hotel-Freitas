@@ -185,8 +185,10 @@ footer {
 @media only screen and (max-width: 749px) {
   header div .logo_index {
     animation: none; }
-  footer div div a .iconos_pie {
-    display: none; }
+  footer {
+    font-size: 10px; }
+    footer div div a .iconos_pie {
+      display: none; }
   .m_nosotros .mapa .mapita {
     width: 300px;
     height: 300px; }
