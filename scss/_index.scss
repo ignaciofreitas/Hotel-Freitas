@@ -2,14 +2,13 @@
 header{
     
     div{
+        display: flex;
+        justify-content: center;
         .logo_index{
         width: 500px;
         height: 150px;
         margin-bottom: 20px;
-        animation-name: efecto_logo;
-        animation-iteration-count: infinite;
-        animation-timing-function: ease-in;
-        animation-duration: 2s;
+
         }
     }
     .navbar{
