@@ -38,16 +38,6 @@ div .tabla {
   padding-left: 10px;
   margin-right: 10px; }
 
-.f_secciones {
-  text-align: center; }
-  .f_secciones div .pie_secciones {
-    color: #ffffff; }
-  .f_secciones div p .volver {
-    color: #ffffff;
-    text-decoration: none; }
-  .f_secciones fieldset .separado {
-    margin: 10px; }
-
 /*INDEX.HTML*/
 header div {
   display: flex;
@@ -81,9 +71,9 @@ header .navbar {
       margin-top: 10px;
       margin-bottom: 10px; }
 
-.f_index {
+footer {
   margin-top: 100px; }
-  .f_index div div .pie_de_pag {
+  footer div div .pie_de_pag {
     text-align: center;
     color: #ffffff;
     padding: 10px;
@@ -195,7 +185,7 @@ header .navbar {
 @media only screen and (max-width: 749px) {
   header div .logo_index {
     animation: none; }
-  .f_index div div a .iconos_pie {
+  footer div div a .iconos_pie {
     display: none; }
   .m_nosotros .mapa .mapita {
     width: 300px;

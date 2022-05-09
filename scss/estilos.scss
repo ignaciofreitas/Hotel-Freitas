@@ -70,27 +70,7 @@ body{
             }
         }
     }
-    .f_secciones{
-        text-align: center;
-    div{
-        .pie_secciones{
-            color:$color-texto;
-        }
-    }
-    div{
-        p{
-            .volver{
-                color: $color-texto;
-                text-decoration: none;
-            }
-        }
-    }
-    fieldset{
-        .separado{
-            margin: 10px;
-        }
-    }
-}   
+   
 @import "index";
 @import "nosotros";
 @import "galeria";
@@ -108,7 +88,7 @@ header{
 
 }
 
-.f_index{
+footer{
     div{
         div{
             a{
