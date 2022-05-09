@@ -19,13 +19,10 @@ div .tabla {
 
 .espacio_publicitario {
   display: flex;
-  flex-direction: row;
-  padding: 10px;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: flex-end;
   margin-top: 50px; }
   .espacio_publicitario .iconos_pie {
-    width: 50px;
+    width: 30px;
     height: 40px;
     filter: invert(15%) sepia(18%) saturate(6865%) hue-rotate(302deg) brightness(106%) contrast(127%); }
 
@@ -56,7 +53,7 @@ header div {
   display: flex;
   justify-content: center; }
   header div .logo_index {
-    width: 500px;
+    width: 400px;
     height: 150px;
     margin-bottom: 20px; }
 
@@ -91,17 +88,24 @@ header .navbar {
 
 .m_index {
   margin-top: 50px; }
-  .m_index div .foto1, .m_index div .foto2 {
-    height: 200px;
-    margin: 5px; }
-  .m_index .form_index div .boton_form {
-    margin-left: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+  .m_index .img_index {
+    display: flex;
+    justify-content: center; }
+    .m_index .img_index .foto1, .m_index .img_index .foto2 {
+      height: 200px;
+      margin: 5px; }
+  .m_index .form_index fieldset div {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .m_index .form_index fieldset div .boton_form {
+      margin-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px; }
 
 .f_index {
   margin-top: 100px; }
-  .f_index div .pie_de_pag {
+  .f_index div div .pie_de_pag {
     text-align: center;
     color: #ffffff;
     padding: 10px;
@@ -213,9 +217,7 @@ header .navbar {
 @media only screen and (max-width: 749px) {
   header div .logo_index {
     animation: none; }
-  header .navbar div div form .registrarse {
-    display: none; }
-  header .navbar div div form .login {
+  .f_index div div a .iconos_pie {
     display: none; }
   .m_nosotros .mapa .mapita {
     width: 300px;

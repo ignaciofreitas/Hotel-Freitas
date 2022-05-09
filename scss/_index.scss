@@ -5,7 +5,7 @@ header{
         display: flex;
         justify-content: center;
         .logo_index{
-        width: 500px;
+        width: 400px;
         height: 150px;
         margin-bottom: 20px;
 
@@ -42,8 +42,10 @@ header{
 
 .m_index{
     margin-top: 50px;
-    
-    div{
+
+    .img_index{
+        display: flex;
+        justify-content: center;
         .foto1, .foto2{
         height: 200px;
         margin: 5px;
@@ -51,11 +53,16 @@ header{
     }
 
     .form_index{
-        div{
-            .boton_form{
-            margin-left: 20px;
-            margin-top: 10px;
-            margin-bottom: 10px;
+        fieldset{
+            div{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .boton_form{
+                margin-left: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                }
             }
         }
     }
@@ -65,12 +72,14 @@ header{
 .f_index{
     margin-top: 100px;
     div{
-        .pie_de_pag{    
+        div{
+            .pie_de_pag{    
             text-align: center;
             color: $color-texto;
             padding: 10px;
             height: 40px;
             margin: 5px;
+            }
         }
     }
 }

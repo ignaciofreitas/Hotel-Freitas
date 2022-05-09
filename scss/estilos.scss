@@ -44,13 +44,10 @@ body{
     }
     .espacio_publicitario{
         display: flex;
-        flex-direction: row;
-        padding: 10px;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: flex-end;
         margin-top: 50px;
         .iconos_pie{
-            width: 50px;
+            width: 30px;
             height: 40px;
             filter: invert(15%) sepia(18%) 
             saturate(6865%) hue-rotate(302deg) 
@@ -108,16 +105,15 @@ header{
             animation: none;
         }
     }
-    .navbar{
+
+}
+
+.f_index{
+    div{
         div{
-            div{
-                form{
-                    .registrarse{
-                        display: none;
-                    }
-                    .login{
-                        display: none;
-                    }
+            a{
+                .iconos_pie{
+                    display: none;
                 }
             }
         }
