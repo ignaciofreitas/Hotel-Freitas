@@ -17,11 +17,10 @@ div .tabla {
     width: 20px;
     filter: invert(99%) sepia(62%) saturate(813%) hue-rotate(176deg) brightness(116%) contrast(100%); }
 
-.espacio_publicitario {
+footer .espacio_publicitario {
   display: flex;
-  justify-content: flex-end;
-  margin-top: 50px; }
-  .espacio_publicitario .iconos_pie {
+  justify-content: flex-end; }
+  footer .espacio_publicitario .iconos_pie {
     width: 30px;
     height: 40px;
     filter: invert(15%) sepia(18%) saturate(6865%) hue-rotate(302deg) brightness(106%) contrast(127%); }

@@ -42,18 +42,20 @@ body{
             }
         }        
     }
-    .espacio_publicitario{
-        display: flex;
-        justify-content: flex-end;
-        margin-top: 50px;
-        .iconos_pie{
-            width: 30px;
-            height: 40px;
-            filter: invert(15%) sepia(18%) 
-            saturate(6865%) hue-rotate(302deg) 
-            brightness(106%) contrast(127%);
-        }        
+    footer{
+        .espacio_publicitario{
+            display: flex;
+            justify-content: flex-end;
+            .iconos_pie{
+                width: 30px;
+                height: 40px;
+                filter: invert(15%) sepia(18%) 
+                saturate(6865%) hue-rotate(302deg) 
+                brightness(106%) contrast(127%);
+            }        
+        }
     }
+    
     .e_secciones{
         div{
             .titulo{
