@@ -189,6 +189,8 @@ footer {
       color: grey; }
 
 @media only screen and (max-width: 749px) {
+  .tabla .texto_general, .tabla .m_protocolos .secciones_p .texto--app, .m_protocolos .secciones_p .tabla .texto--app {
+    font-size: 10px; }
   header div .logo_index {
     animation: none; }
   footer {
