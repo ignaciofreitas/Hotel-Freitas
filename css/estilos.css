@@ -70,14 +70,12 @@ header .navbar {
       margin-top: 10px;
       margin-bottom: 10px; }
 
-footer {
-  margin-top: 100px; }
-  footer div div .pie_de_pag {
-    text-align: center;
-    color: #ffffff;
-    padding: 10px;
-    height: 40px;
-    margin: 5px; }
+footer div div .pie_de_pag {
+  text-align: center;
+  color: #ffffff;
+  padding: 10px;
+  height: 40px;
+  margin: 5px; }
 
 /*NOSOTROS.HTML*/
 .e_secciones div .titulo {
